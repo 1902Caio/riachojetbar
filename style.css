@@ -1,0 +1,156 @@
+body{
+  background-color: burlywood;
+  margin: 0;
+  padding: 0;
+}
+header{
+  background-color: #f2f2f2;
+  padding:0px;
+  display: flex;
+  align-items: center; /* alinha verticalmente */
+  gap: 15px;           /* espaço entre imagem e texto */
+  margin-left: 0px; 
+  padding-left: 200px;
+  }
+  
+.logo {
+  width: 5%;
+  height: auto;
+}
+header h1 {
+  font-size: 30px;
+  color: #300505;
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  border: left 2px; 
+
+}
+.linha {
+  width: 1px;               /* agora a linha é fina no lado */
+  height: 25px;            /* e fica alta na vertical */
+  background-color: black;  /* cor da linha */
+  margin: 0 10px;           /* espaço lateral (opcional) */
+}
+nav a {
+  text-decoration: none;    /* tira o sublinhado padrão */
+  color: #333;              /* cor do link */
+  font-weight: normal;        /* deixa o texto em negrito */
+  padding: 8px 12px;        /* espaçamento interno para clicar melhor */
+  margin-right: 20px; /* espaço entre os links */
+}
+
+nav a:hover {
+  color: rgb(0, 0, 0);               /* cor do texto ao passar o mouse */
+  text-decoration: underline; /* sublinha o texto ao passar o mouse */
+}
+nav.social {
+  margin-left: 500px;  /* empurra os ícones para o máximo à direita */
+  display: flex;
+  align-items: center;
+}
+
+nav.social a {
+  display: flex;
+  flex-direction: column; /* empilha verticalmente */
+  align-items: center;    /* centraliza horizontalmente */
+  color: #333;
+  font-size: 28px;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+nav.social a span {
+  font-size: 14px;       /* tamanho do texto abaixo do ícone */
+  margin-top: 5px;       /* espaço entre ícone e texto */
+  color: inherit;        /* mesma cor do ícone */
+}
+
+nav.social a:hover {
+  color: #25D366; /* verde WhatsApp, pode mudar para outra cor */
+  cursor: pointer; /* cursor de “mãozinha” */
+}
+
+.apresentacao {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 60px 20px;
+  margin-bottom: 50px;
+  margin-top: 1000px;
+}
+
+.imagem-bloco {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Aplica só na imagem do drink */
+.bloco-drink {
+  margin-left: 300px; /* move imagem + legenda */
+}
+
+.drink, .musica, .comida {
+  width: 400px;
+  height: auto;
+  min-height: 200px;
+  border-radius: 80px;
+}
+
+.legenda {
+  font-size: 18px;
+  color: #3a0000;
+  margin-top: 10px;
+}
+
+
+.drink {
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+  min-height: 300px;
+  border-radius: 80px;
+ 
+}
+.musica {
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+  min-height: 300px;
+  border-radius: 80px;
+}
+.comida {
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+  min-height: 300px;
+  border-radius: 80px;
+}
+.contact {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact a {
+  background-color: #25D366;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.contact a:hover {
+  background-color: #1eb94c;
+}
+
+footer {
+  background-color: #8B0000;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
