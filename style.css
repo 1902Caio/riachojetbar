@@ -154,3 +154,61 @@ footer {
   padding: 10px;
   font-size: 14px;
 }
+@media (max-width: 600px) {
+  header {
+    flex-direction: column !important;
+    align-items: center !important;
+    padding-left: 0 !important;
+    gap: 10px;
+  }
+
+  .logo {
+    width: 50% !important;
+    max-width: 200px;
+  }
+
+  header h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .linha {
+    display: none; /* Esconde a linha para não atrapalhar no mobile */
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0 !important;
+  }
+
+  nav a {
+    margin: 5px 0;
+    padding: 10px 15px;
+  }
+
+  nav.social {
+    margin-left: 0 !important;
+    margin-top: 15px;
+    justify-content: center;
+  }
+
+  .apresentacao {
+    flex-direction: column;
+    padding: 20px 10px;
+    margin-top: 20px !important;
+  }
+
+  .bloco-drink {
+    margin-left: 0 !important;
+  }
+
+  .drink, .musica, .comida {
+    width: 100% !important;
+    max-width: 350px;
+    min-height: auto;
+    border-radius: 20px;
+  }
+}
+
