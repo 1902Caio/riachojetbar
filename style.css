@@ -154,61 +154,90 @@ footer {
   padding: 10px;
   font-size: 14px;
 }
-@media (max-width: 600px) {
+/* RESPONSIVO: para telas até 768px (ex: celular) */
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
   header {
-    flex-direction: column !important;
-    align-items: center !important;
-    padding-left: 0 !important;
-    gap: 10px;
-  }
-
-  .logo {
-    width: 50% !important;
-    max-width: 200px;
-  }
-
-  header h1 {
-    font-size: 24px;
+    flex-direction: column;     /* header em coluna */
+    align-items: center;        /* centraliza conteúdo */
+    padding-left: 0;            /* tira o padding lateral */
     text-align: center;
   }
 
+  .logo {
+    width: 40%;                 /* logo maior e proporcional */
+    height: auto;
+    margin: 10px 0;
+  }
+
+  header h1 {
+    font-size: 24px;            /* fonte menor para caber melhor */
+    margin: 10px 0;
+  }
+
   .linha {
-    display: none; /* Esconde a linha para não atrapalhar no mobile */
+    display: none;              /* esconde a linha vertical, se quiser */
   }
 
   nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 0 !important;
+    margin-top: 10px;
   }
 
   nav a {
-    margin: 5px 0;
-    padding: 10px 15px;
+    margin-right: 10px;         /* menos espaço entre links */
+    padding: 6px 8px;
+    font-size: 16px;            /* texto um pouco menor */
   }
 
   nav.social {
-    margin-left: 0 !important;
-    margin-top: 15px;
-    justify-content: center;
+    margin-left: 0;             /* tira deslocamento para direita */
+    justify-content: center;    /* centraliza ícones */
+    margin-top: 10px;
+  }
+
+  nav.social a {
+    font-size: 24px;            /* ícones um pouco menores */
+    margin-right: 10px;
   }
 
   .apresentacao {
-    flex-direction: column;
+    margin-top: 40px;           /* ajusta espaço superior */
+    margin-bottom: 30px;
     padding: 20px 10px;
-    margin-top: 20px !important;
+    gap: 20px;
+    flex-direction: column;     /* exibe blocos empilhados */
   }
 
   .bloco-drink {
-    margin-left: 0 !important;
+    margin-left: 0;             /* centraliza bloco */
   }
 
   .drink, .musica, .comida {
-    width: 100% !important;
-    max-width: 350px;
-    min-height: auto;
-    border-radius: 20px;
+    width: 90%;                 /* ocupa quase toda largura */
+    min-height: auto;           /* remove altura mínima fixa */
+    border-radius: 40px;        /* borda mais suave */
+  }
+
+  .legenda {
+    font-size: 16px;            /* legenda menor */
+  }
+
+  .contact {
+    padding: 15px;
+  }
+
+  .contact a {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  footer {
+    padding: 8px;
+    font-size: 12px;
   }
 }
 
