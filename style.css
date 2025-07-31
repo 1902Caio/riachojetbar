@@ -160,12 +160,16 @@ footer {
     padding: 0;
     margin: 0;
   }
+  .celular {
+    display: none;              /* esconde a linha vertical */
+  }
 
   header {
     flex-direction: column;     /* header em coluna */
     align-items: center;        /* centraliza conteúdo */
     padding-left: 0;            /* tira o padding lateral */
     text-align: center;
+    background-color: bisque; 
   }
 
   .logo {
@@ -240,4 +244,3 @@ footer {
     font-size: 12px;
   }
 }
-
